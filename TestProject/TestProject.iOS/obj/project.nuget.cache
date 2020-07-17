@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "99WRyCzSYs+5kaNYPWeQSgUUIku+A4IakRGVXt7ohkm/vQCC1WMf6Bf/Mm3UUVaDwx6FOHjAhGDUL0Fjxf7m9g==",
+  "dgSpecHash": "lwh4Z/VtUz98n3QVr61y6ON41spmu2twubIG4HMBaDzUXSzj1XfJxWE/Y0tlvvhewVcxW99994a5e45aluz5Gw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jeremy-dane\\source\\repos\\TestProject\\TestProject\\TestProject.iOS\\TestProject.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jeremy-dane\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\jeremy-dane\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\jeremy-dane\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
     "C:\\Users\\jeremy-dane\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",

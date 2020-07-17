@@ -12,13 +12,9 @@ namespace TestProject.Model
         public string access_token { get; set; }
         public string error_descrption { get; set; }
         public DateTime expire_date { get; set; }
+        public int expire_in { get; set; }
 
         public Token() { }
-        //public Token(string access_token, string error_description, DateTime expire_date)
-        //{
-        //    this.access_token = access_token;
-        //    this.error_descrption = error_descrption;
-        //    this.expire_date = expire_date;
-        //}
+        
     }
 }

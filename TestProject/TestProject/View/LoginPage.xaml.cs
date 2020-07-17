@@ -30,13 +30,17 @@ namespace TestProject.View
             Entry_password.Completed += (s, e)=>Btn_signIn_Clicked(s,e);
         }
 
-        void Btn_signIn_Clicked(object sender, EventArgs e)
+        async void Btn_signIn_Clicked(object sender, EventArgs e)
         {
             User user = new User(Entry_username.Text, Entry_password.Text);
             if (user.CheckInformation())
             {
                 DisplayAlert("Login","Login Sucess","Ok");
-                App.UserDatabase.SaveUser(user);
+                var result = await App.RestService.Login(user);
+                if (result.access_token != null)
+                {
+                    App.UserDatabase.SaveUser(user);
+                }                
             }
             else
             {

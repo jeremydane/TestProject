@@ -13,6 +13,7 @@ namespace TestProject.Model
 
         public static int LoginIconHeight = 120;
 
-
+        //-----Login-------
+        public static string LoginUrl = "https://test.com/api/Auth/Login";
     }
 }
