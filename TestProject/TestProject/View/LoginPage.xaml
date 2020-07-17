@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestProject.View.LoginPage">
+    <StackLayout x:Name="MasterLayout">
+        <Image x:Name="Icon" Source="C:\Users\jeremy-dane\source\repos\TestProject\TestProject\TestProject.Android\Resources\drawable\LoginIcon.png" Margin="0,80,0,0"/>
+        
+        <StackLayout x:Name="LogoStack" VerticalOptions="FillAndExpand">
+            <Image x:Name="LoginIcon" Source="LoginIcon.png" Margin="0,80,0,0"/>
+        </StackLayout>
+        
+        <StackLayout x:Name="LoginEntries" VerticalOptions="StartAndExpand">
+        <StackLayout.Padding>
+            <OnIdiom x:TypeArguments="Thickness">
+                <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
+            </OnIdiom>
+        </StackLayout.Padding>
+
+            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="True"/>
+            <Label x:Name="Lb1_username" Text="Username"/>
+            <Entry x:Name="Entry_username" Placeholder="Username"/>
+            <Label x:Name="Lb2_password" Text="Password"/>
+            <Entry x:Name="Entry_password" Placeholder="Password"/>
+            <Button x:Name="Btn_signIn" Text="Sign In" Clicked="Btn_signIn_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
