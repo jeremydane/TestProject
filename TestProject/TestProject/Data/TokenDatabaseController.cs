@@ -7,53 +7,52 @@ using Xamarin.Forms;
 
 namespace TestProject.Data
 {
-    public class UserDatabaseController
+    public class TokenDatabaseController
     {
         static object locker = new object();
         SQLiteConnection database;
-        public UserDatabaseController()
+        public TokenDatabaseController()
         {
             database = DependencyService.Get<ISQLite>().GetConnection();
-            database.CreateTable<User>();
+            database.CreateTable<Token>();
         }
-        public User GetUser()
+        public Token GetToken()
         {
             lock (locker)
             {
-                if (database.Table<User>().Count()==0)
+                if (database.Table<Token>().Count() == 0)
                 {
                     return null;
                 }
                 else
                 {
-                    return database.Table<User>().First();
+                    return database.Table<Token>().First();
                 }
             }
         }
 
-        public int SaveUser(User user)
+        public int SaveToken(Token token)
         {
-            lock(locker)
+            lock (locker)
             {
-                if (user.Id !=0)
+                if (token.Id != 0)
                 {
-                    database.Update(user);
-                    return user.Id;
+                    database.Update(token);
+                    return token.Id;
                 }
                 else
                 {
-                    return database.Insert(user);
+                    return database.Insert(token);
                 }
             }
         }
 
-        public int DeleteUser(int id)
+        public int DeleteToken(int id)
         {
-            lock(locker)
+            lock (locker)
             {
-                return database.Delete<User>(id);                    
+                return database.Delete<Token>(id);
             }
         }
-
     }
 }

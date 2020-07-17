@@ -36,11 +36,14 @@ namespace TestProject.View
             if (user.CheckInformation())
             {
                 DisplayAlert("Login","Login Sucess","Ok");
+                App.UserDatabase.SaveUser(user);
             }
             else
             {
                 DisplayAlert("Login", "Login Failed, empty username or password", "Ok");
             }
+
+
         }
     }
 }

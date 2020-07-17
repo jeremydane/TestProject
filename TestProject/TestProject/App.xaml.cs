@@ -1,4 +1,6 @@
 ﻿using System;
+using TestProject.Data;
+using TestProject.Model;
 using TestProject.View;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -7,6 +9,8 @@ namespace TestProject
 {
     public partial class App : Application
     {
+        static TokenDatabaseController tokenDatabase;
+        static UserDatabaseController userDatabase;
         public App()
         {
             InitializeComponent();
@@ -24,6 +28,32 @@ namespace TestProject
 
         protected override void OnResume()
         {
+        }
+
+        public static UserDatabaseController UserDatabase
+        {
+            get
+            {
+                if (userDatabase ==null)
+                {
+                    userDatabase = new UserDatabaseController();
+                }
+                return userDatabase;
+            }
+
+        }
+
+        public static TokenDatabaseController TokenDatabase
+        {
+            get
+            {
+                if (tokenDatabase == null)
+                {
+                    tokenDatabase = new TokenDatabaseController();
+                }
+                return tokenDatabase;
+            }
+
         }
     }
 }
