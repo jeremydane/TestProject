@@ -12,3 +12,5 @@ C:\Users\jeremy-dane\source\repos\TestProject\TestProject\TestProject\obj\Debug\
 C:\Users\jeremy-dane\source\repos\TestProject\TestProject\TestProject\obj\Debug\netstandard2.0\TestProject.pdb
 C:\Users\jeremy-dane\source\repos\TestProject\TestProject\TestProject\obj\Debug\netstandard2.0\View\LoginPage.xaml.g.cs
 C:\Users\jeremy-dane\source\repos\TestProject\TestProject\TestProject\bin\Debug\netstandard2.0\LoginIcon.png
+C:\Users\jeremy-dane\source\repos\TestProject\TestProject\TestProject\obj\Debug\netstandard2.0\TestProject.csproj.CoreCompileInputs.cache
+C:\Users\jeremy-dane\source\repos\TestProject\TestProject\TestProject\obj\Debug\netstandard2.0\XamlC.stamp
